@@ -11,3 +11,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Test
 
+```{r}
+party_meal <- read.csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-20/thanksgiving_meals.csv')
+```
+
+```{r}
+library(tidyverse)
+library(readr)
+library(janitor)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(skimr)
+```
+```{r}
+party_meal %>%
+  head(10)%>%
+  kable()
+
+```
+
